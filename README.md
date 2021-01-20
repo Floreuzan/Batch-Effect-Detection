@@ -1,6 +1,6 @@
 # Notes:
 
-Folder "weak", "mild", "strong" are the simulated data.\
+Folder "weak", "mild", "strong" are the simulated data.
 
 Folder "result_dataframe" is the data of the result generated for each size ratio.\
 
