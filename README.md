@@ -25,23 +25,15 @@ performance in situations where we do not have access to a massive sized dataset
 
 # Data simulation
 
-We used two different approaches for simulating scRNA-seq data and batch effects. 
-
-* The first method samples the data points from a wero-inflated negative binomial model.
-* The second approach is based on the Splat package in R using a Gamma-Poisson distribution.
+We stimulate data using the Splat package in R using a Gamma-Poisson distribution. We control for the batch-effect (weak, mild, strong) and for the size ratio between the two batches (1/1, 1/3, 1/4, 1/9, 1/19).
 
 #### Notes:
 
-File "Simulations.ipynb" is a tidy and combined version of the final code.
-
 Files named as "result_sim2_ratio_1_*_rjc.ipynb" are the raw code to run the test results for different size ratios.
-
+File "Simulations.ipynb" is a tidy and combined version of the final code.
 Folder "weak", "mild", "strong" are the simulated data with different batch effects.
-
 Folder "result_dataframe" is the data of the result generated for each size ratio.
-
-Folder "result_plot" contains the code and the results of visualization.
-
-File "data_sim2_generation.Rmd" is the code for data simulation with Splat.
+Folder "result_plot" contains the code for the visualization with the plots.
+File "data_sim2_generation.Rmd" is the code for data simulation.
 
 
